@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::post('/reg','User\LoginController@reg');  //注册
+Route::post('/login','User\LoginController@login');  //登陆
+Route::get('/logout','User\LoginController@logout');  //退出登陆
