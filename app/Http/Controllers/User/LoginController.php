@@ -45,6 +45,6 @@ class LoginController extends Controller
                 'password' => $post['password'],
             ]
         ]);
-        echo $res->getBody();
+        return $res->getBody();
     }
 }
